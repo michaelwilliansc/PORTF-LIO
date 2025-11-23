@@ -1,69 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Michael Willian — Portfólio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Michael Willian - Designer Gráfico / Ilustrador</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="brand">Michael Willian — designer gráfico / ilustrador</div>
-    <nav class="main-nav">
-      <button id="btn-about" class="nav-btn">Sobre mim</button>
-      <button id="btn-portfolio" class="nav-btn">Portfólio</button>
-    </nav>
+
+  <header class="top-menu">
+    <h1>Michael Willian</h1>
+    <p>Designer Gráfico • Ilustrador</p>
   </header>
 
-  <main id="main">
-    <section id="home" class="screen home-screen">
-      <h2 class="section-title">Meus livros</h2>
-      <div id="books" class="books-grid"></div>
-    </section>
+  <div class="home-buttons">
+    <a href="sobre.html" class="btn">Sobre mim</a>
+    <a href="portfolio.html" class="btn">Portfólio</a>
+  </div>
 
-    <section id="viewer" class="screen viewer-screen hidden">
-      <button id="closeViewer" class="close-btn">Fechar</button>
-      <div id="bookStage" class="book-stage">
-        <div id="bookCover" class="book-cover">
-          <!-- capa e animação -->
-        </div>
-        <div id="bookView" class="book-view hidden">
-          <div class="page left-page"></div>
-          <div class="page right-page"></div>
-          <button id="prevPage" class="page-btn prev">&larr;</button>
-          <button id="nextPage" class="page-btn next">&rarr;</button>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="screen about-screen hidden">
-      <div class="card-profile">
-        <div class="profile-front">
-          <img src="assets/profile.png" alt="Michael Willian" class="pfp" />
-          <h3>Michael Willian</h3>
-          <p>Design gráfico • Ilustração</p>
-          <p class="softwares">Procreate · Photoshop · Clip Studio · Illustrator</p>
-        </div>
-        <div class="profile-back">
-          <h4>Sobre mim</h4>
-          <p>Sou ilustrador, gosto de ... (coloca aqui o texto que preferir)</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <template id="book-card-template">
-    <div class="book-card">
-      <div class="book-thumb">
-        <img class="thumb-cover" src="" alt="Capa do livro">
-      </div>
-      <div class="book-info">
-        <h3 class="book-title"></h3>
-        <p class="book-desc"></p>
-      </div>
-    </div>
-  </template>
-
-  <script src="script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
+
